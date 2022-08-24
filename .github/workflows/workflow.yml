@@ -1,7 +1,8 @@
 name : My manual workflow
 
+
 env:
-  Message: "Wlecome"
+  Message: "Wel--come"
 
 on:
   push:
@@ -31,6 +32,6 @@ jobs:
       - name: Run a one-line script
         run: echo $Message
 
-      - name: Run a multi-line scripr
+      - name: Run a multi-line scriprt
         run: |
           echo Add new thingd
