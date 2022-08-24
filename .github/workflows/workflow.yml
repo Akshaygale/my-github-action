@@ -10,12 +10,12 @@ jobs:
   job_first:
     runs-on: ubuntu-latest
     step:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      -name: Run a one-line script
+      - name: Run a one-line script
         run: echo My pardon
 
-      -name: Run a multi-line script
+      - name: Run a multi-line script
         run: |
         echo Add other action again1
         echo test, again1.
