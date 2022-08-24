@@ -1,5 +1,8 @@
 name : My manual workflow
 
+env:
+  Message: "Wlecome"
+
 on:
   push:
     branch: ["main","master"]
@@ -19,3 +22,15 @@ jobs:
         run: |
           echo Add other action again1
           echo test, again1.
+
+  job_second:
+    runs-on: windows-latest
+    steps:
+      - uses: action/checkout@v3
+
+      - name: Run a one-line script
+        run: echo $Message
+
+      - name: Run a multi-line scripr
+        run: |
+          echo Add new thingd
