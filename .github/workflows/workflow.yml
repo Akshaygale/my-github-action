@@ -17,5 +17,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-        echo Add other action again1
-        echo test, again1.
+          echo Add other action again1
+          echo test, again1.
