@@ -8,10 +8,10 @@ on:
 
 jobs:
   job_first:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     step:
       -uses: actions/checkout@v3
-      
+
       -name: Run a one-line script
         run: echo My pardon
 
